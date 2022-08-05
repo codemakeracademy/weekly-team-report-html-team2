@@ -28,6 +28,10 @@ const config = {
     new HtmlWebpackPlugin({
       template: "teamReports.html", 
       filename: "teamReports.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "reportHistory.html", 
+      filename: "reportHistory.html"
     })
  
     // Add your plugins here
