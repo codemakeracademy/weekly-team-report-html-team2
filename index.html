@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <title>Load Guide</title>
-    </head>
-    <body class="d-flex h-100">
-        <%= require("html-loader!/components/menu.html").default %>
-    
+<html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Launch Guide</title>
+  </head>
+  <body class="d-flex h-100">
+    <%= require("html-loader!./components/menu.html").default %>
+    <div class="w-100 h-auto">
+      <header class="h-25 bg bg-dark w-100 h-10">Launch Guide</header>
+      <div
+        class="align-items-center d-flex flex-column w-100 position-relative"
+      >
+        <%=require('html-loader!./LaunchGuide.html').default%>
+      </div>
+<!--      <%= require("html-loader!./components/HelpButton.html").default %>-->
+    </div>
+  </body>
 </html>
