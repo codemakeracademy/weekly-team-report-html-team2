@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Edit Company's Information</title>
+    </head>
+    <body class="d-flex flex-row h-100">
+        <%= require("html-loader!/components/menu.html").default %>
+        <div class="d-flex flex-column w-100">
+        <header class="d-flex flex-column  h-25 bg bg-dark  mb-5">
+            <h1 class="d-flex justify-content-center text-white display-2 mt-5" style = "font-weight: bold; font-family: 'Times New Roman', Times, serif">Anatoly Kolodkin</h1>
+            <h5 class="d-flex justify-content-center text-white" style="font-family:Arial, Helvetica, sans-serif">anatoliy@ankosoftware.com</h5>
+        </header>
+        <section class="d-flex flex-column flex-fill justify-content-around align-items-left w-100 p-5">
+
+            <div class="d-flex flex-column">
+            <h1>Edit Anko Technologies Corp's Information</h1>
+            <p>You may edit the company name, as well as deactivate/activate the Weekly Report Tool functionally. 
+                If you need to edit a team member's information, you can access that information by seeing the list of team members.</p>
+            </div>
+
+            <div class="mt-5 mb-2">    
+            <h5 class="mb-1"><strong>RENAME ANKO TECHNOLOGIES CORP</strong></h5>
+            <hr class="mt-1">
+            </div>
+
+            <div class="d-flex flex-column flex-fill">
+            <h6><strong>Change company name.</strong></h6>
+            <input type="text" class="w-50 border border-warning border-3 pt-4">
+            <button class="w-25 border border-dark border-3 mt-3 pt-2 bg-light rounded-1"><h6>Save name change</h6></button>
+            </div>
+
+            <div class="d-flex flex-column flex-fill mt-5">
+            <h6 class="mb-1"><strong>SEE A LIST OF ANKO TECHNOLOGIES CORP'S TEAM MEMBERS</strong></h6>
+            <hr class="mt-1">
+            </div>
+            <div>
+            <p>If you need to edit a particular team member, you can see a complete lsit of team members and viist their profile to make edits.
+                <strong>You will not be able to see a team member's weekly report.</strong>
+            </p>
+            <a href="teamMembers.html"><button class="w-25 border border-dark border-3 pt-2 bg-light rounded-1"><h6>See All Team Members</h6></button></a>
+            </div>
+        </section>
+        </div>
+
+        <!-- To-do: Fonts for header and section -->
+    </body>
+    
+</html>
