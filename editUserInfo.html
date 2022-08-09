@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <meta charset="utf-8" />
+        <title>Edit User's Information</title>
+    </head>
+    <body class="d-flex flex-row h-100">
+        <%= require("html-loader!/components/menu.html").default %>
+        <div class="d-flex flex-column w-100">
+        <header class="d-flex flex-column  h-25 bg bg-dark  mb-5">
+          <h1 class="d-flex justify-content-center text-white display-2 mt-5" style = "font-weight: bold; font-family: 'Times New Roman', Times, serif">Anatoly Kolodkin</h1>
+          <h5 class="d-flex justify-content-center text-white" style="font-family:Arial, Helvetica, sans-serif">anatoliy@ankosoftware.com</h5>
+        </header>
+        <section class="d-flex flex-column align-items-left p-5">
+          <h1><strong>Edit Anatoliy's information</strong></h1>
+          <p class="mb-5"><strong>You may assign leaders or team members to this person, as well as deactivate their account
+            if they no longer work for your organization.</strong></p>
+
+            <div class="d-flex flex-column mb-3 justify-content-start">
+            <h5 class="mb-1"><strong>BASIC PROFILE INFORMATION</strong></h5>
+            <hr class="mt-1 mb-4">
+            <h6><strong>First Name</strong></h6>
+            <input type="text" class="mb-3 w-25">
+            <h6><strong>Last Name</strong></h6>
+            <input type="text" class="mb-3 w-25">
+            <h6><strong>Title</strong></h6>
+            <input type="text" class="mb-3 w-50">
+            <div class="d-flex flex-shrink-1">
+              <button class="bg-warning text-dark border-0 rounded-1 mb-5 px-3 py-2"><strong>Save</strong></button>
+              </div>
+            </div>
+
+            <h5 class="mb-1"><strong>ANATOLIY REPORTS TO THE FOLLOWING LEADERS:</strong></h5>
+            <hr class="mt-1">
+
+            <div class="d-flex flex-row flex-wrap mb-3 justify-content-start">
+              <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Nikolai Kapustin</strong></button>
+</button>
+              <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Nina Mammadova</strong></button>
+              <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Natalia Starkova</strong></button>
+              <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Anton Tarkhanov</strong></button>
+              <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Alexandr Vovchuk</strong></button>
+              </div>
+            <div class="mb-5">
+              <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="me-3 py-2 px-3 bg-white rounded-1"><strong>Edit Leader(s)</strong></button>
+                      <!-- Modal -->
+                <div class="modal modal-xl fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog border-top border-warning border-3">
+                    <div class="d-flex flex-column modal-content p-5 shadow rounded-0">
+                        <div class="d-flex flex-row justify-content-between">
+                        <h1 class="modal-title" id="staticBackdropLabel"><strong>Edit Leader(s).</strong></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <p>By default, the person who sent you the invite will receive your weekly report.
+                            You may also select the person you report to directly as an additional leader.
+                        </p>
+                        <p>Pro Tip: You can change who sees your report in your profile settings.</p>
+                        <div class="d-flex flex-row flex-wrap mb-3 justify-content-start">
+                            <div class="me-2 mb-2 py-2 ps-3 pe-1 bg-dark text-white rounded-1"><strong>Nikolai Kapustin</strong><button type="button" class="ms-2 btn-close btn-close-white" aria-label="Close"></button></div>                        
+                            <div class="me-2 mb-2 py-2 ps-3 pe-1 bg-dark text-white rounded-1"><strong>Nina Mammadova</strong><button type="button" class="ms-2 btn-close btn-close-white" aria-label="Close"></button></div>
+                            <div class="me-2 mb-2 py-2 ps-3 pe-1 bg-dark text-white rounded-1"><strong>Natalia Starkova</strong><button type="button" class="ms-2 btn-close btn-close-white" aria-label="Close"></button></div>
+                            <div class="me-2 mb-2 py-2 ps-3 pe-1 bg-dark text-white rounded-1"><strong>Anton Tarkhanov</strong><button type="button" class="ms-2 btn-close btn-close-white" aria-label="Close"></button></div>
+                            <div class="me-2 mb-2 py-2 ps-3 pe-1 bg-dark text-white rounded-1"><strong>Alexandr Vovchuk</strong><button type="button" class="ms-2 btn-close btn-close-white" aria-label="Close"></button></div>
+                        </div>
+
+                        <input type="text" class="p-3 mb-5">
+                        <div class="d-flex flex-shrink-1">
+                          <button class="bg-warning text-dark border-0 rounded-1 mb-5 px-3 py-2"><strong>Save Changes</strong></button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+              <h5 class="mb-1"><strong>THE FOLLOWING TEAM MEMBERS REPORT TO ANATOLIY:</strong></h5>
+              <hr class="mt-1">
+
+              <div class="d-flex flex-row flex-wrap mb-3 justify-content-start">
+                <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Aleksandr Evseev</strong></button>
+                <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Nikolai Kapustin</strong></button>
+                <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Anna Kotova</strong></button>
+                <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Nina Mammadova</strong></button>
+                <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Natalia Starkova</strong></button>
+                <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Anton Tarkhanov</strong></button>
+                <button class="me-2 mb-2 py-2 px-3 bg-dark text-white rounded-1"><strong>Alexandr Vovchuk</strong></button>
+              </div>
+              <div class="mb-5">
+                <button class="me-3 py-2 px-3 bg-white rounded-1"><strong>Edit Member(s)</strong></button>
+              </div>
+
+              <div class="d-flex flex-column">
+                <h5 class="mb-1"><strong>ANATOLIY'S INVITE LINK</strong></h5>
+                <hr class="mt-1 mb-3">
+                <p><strong>Share the following link to invite team members on Anatoliy's behalf.</strong></p>
+                <div class="d-flex flex-column flex-shrink-1 align-items-center">
+                  <input type="text" class="mb-3 w-25 py-2" readonly>
+                  <button class="bg-warning text-dark border-0 rounded-1 mb-5 px-3 py-2"><strong>Copy Link</strong></button>
+                </div>
+              </div>
+
+
+        </section>
+        </div>
+        <!-- To-do: Fonts for header and section -->
+    </body>
+    
+</html>

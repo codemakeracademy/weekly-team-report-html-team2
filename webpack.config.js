@@ -24,10 +24,6 @@ const config = {
       filename: "myReports.html",
     }),
     new HtmlWebpackPlugin({
-      template: "teamReports.html",
-      filename: "teamReports.html",
-    }),
-    new HtmlWebpackPlugin({
       template: "inviteYourTeam.html",
       filename: "inviteYourTeam.html",
     }),
@@ -35,6 +31,27 @@ const config = {
       template: "fillOutReport.html",
       filename: "fillOutReport.html",
     }),
+      template: "teamReports.html", 
+      filename: "teamReports.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "reportHistory.html", 
+      filename: "reportHistory.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "editCorpInfo.html", 
+      filename: "editCorpInfo.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "teamMembers.html",
+      filename: "teamMembers.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "editUserInfo.html",
+      filename: "editUserInfo.html"
+    })
+    // Add your plugins here
+    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
     rules: [
