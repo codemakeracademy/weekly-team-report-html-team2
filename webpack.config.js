@@ -31,6 +31,7 @@ const config = {
       template: "fillOutReport.html",
       filename: "fillOutReport.html",
     }),
+    new HtmlWebpackPlugin({
       template: "teamReports.html", 
       filename: "teamReports.html"
     }),
