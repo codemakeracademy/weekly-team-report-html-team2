@@ -2,3 +2,12 @@
     max-width: 250px;
     background: #333a3d;
 }
+
+.help__button{
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    width: 85px;
+    height: 40px;
+    z-index: 10;
+}
