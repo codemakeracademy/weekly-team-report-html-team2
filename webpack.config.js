@@ -32,6 +32,18 @@ const config = {
     new HtmlWebpackPlugin({
       template: "reportHistory.html", 
       filename: "reportHistory.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "editCorpInfo.html", 
+      filename: "editCorpInfo.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "teamMembers.html",
+      filename: "teamMembers.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "editUserInfo.html",
+      filename: "editUserInfo.html"
     })
  
     // Add your plugins here
