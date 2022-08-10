@@ -7,13 +7,105 @@
   <body class="d-flex h-100">
     <%= require("html-loader!./components/menu.html").default %>
     <div class="w-100 h-auto">
-      <header class="h-25 bg bg-dark w-100 h-10">Launch Guide</header>
-      <div
-        class="align-items-center d-flex flex-column w-100 position-relative"
+      <header
+        class="d-flex flex-column h-25 bg bg-dark w-100 h-10 text-white align-items-center justify-content-center display-2 py-5"
       >
-        <%=require('html-loader!./LaunchGuide.html').default%>
+        <img
+          class="img-fluid"
+          src="<%= require('./img/LaunchGuideHeader.png') %>"
+          alt="Header logo"
+          width="250px"
+        />
+        <h2>Launch Guide</h2>
+      </header>
+      <div
+        class="align-items-center justify-content-center d-flex flex-column w-100 pt-5"
+      >
+        <div class="card mb-lg-5 w-50 d-flex">
+          <div class="row g-0 d-flex justify-content-around">
+            <div class="col-md-8 w-50 align-self-center flex-column">
+              <h5 class="card-title">Invite Your Team</h5>
+              <div class="card-text">
+                Click on the link below and invite the team members who directly
+                report to you.
+              </div>
+              <a class="btn btn-warning my-3" href="inviteYourTeam.html"
+                >Invite Your Team</a
+              >
+            </div>
+            <div class="col-md-4 w-50">
+              <img
+                class="img-fluid"
+                src="<%= require('./img/LaunchGuideImage1.png') %>"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 w-50">
+          <div class="row g-0 d-flex justify-content-around">
+            <div class="col-md-4 w-50">
+              <img
+                class="img-fluid"
+                src="<%= require('./img/LaunchGuideImage2.png') %>"
+                alt=""
+              />
+            </div>
+            <div class="col-md-8 w-50 align-self-center">
+              <h5 class="card-title">
+                Encourage Your Team to Accept Your Invitation
+              </h5>
+              <div class="card-text">
+                When they receive your invitation, team members will be prompted
+                to complete their profiles. If a team member hasn't created
+                their profile within 24 hours, follow up with them!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 w-50">
+          <div class="row g-0 d-flex justify-content-around">
+            <div class="col-md-8 w-50 align-self-center">
+              <h5 class="card-title">Remind Your Team</h5>
+              <div class="card-text">
+                Every Friday, we'll automatically send your team members an
+                email reminding them to fill out their Weekly Report. But we
+                also encourage you to consistently request their Weekly Reports
+                so they realize the importance of this new habit.
+              </div>
+            </div>
+            <div class="col-md-4 w-50">
+              <img
+                class="img-fluid"
+                src="<%= require('./img/LaunchGuideImage3.png') %>"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 w-50">
+          <div class="row g-0 d-flex justify-content-around">
+            <div class="col-md-4 w-50">
+              <img
+                class="img-fluid"
+                src="<%= require('./img/LaunchGuideImage4.png') %>"
+                alt=""
+              />
+            </div>
+            <div class="col-md-8 w-50 align-self-center">
+              <h5 class="card-title">Read Their Reports</h5>
+              <div class="card-text">
+                Set aside some time on Monday to read all the reports. Then
+                reach out to any team members who need to be acknowledged for a
+                success or supported during difficult time. (And yes, we'll send
+                you a reminder to read your reports each week too.)
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-<!--      <%= require("html-loader!./components/HelpButton.html").default %>-->
+      <%= require("html-loader!./components/helpButton.html").default %>
+      <%= require("html-loader!./components/feedbackButton.html").default %>
     </div>
   </body>
 </html>

@@ -12,8 +12,8 @@
   <body class="d-flex h-100">
     <%=require('html-loader!./components/menu.html').default%>
     <div class="d-flex flex-column align-items-center h-100 p-0 w-100">
-      <header class="h-25 bg bg-dark w-100">Invite Your Team</header>
-      <div class="d-flex flex-column w-75 shadow-sm rounded p-3 mt-3 bg-white">
+      <header class="d-flex h-25 bg bg-dark w-100 text-white align-items-center justify-content-center display-4 fw-bold py-5">Invite Your Team</header>
+      <div class="d-flex flex-column w-50 shadow-sm rounded p-3 mt-3 bg-white">
         <div class="fw-bold">
           Success! Your team member has been invited to the Weekly Report Tool.
         </div>
@@ -21,11 +21,11 @@
           Once they accept your invitation, they'll be able to create their reports.
         </div>
       </div>
-      <div class="d-flex w-75 pt-3 pb-3">
+      <div class="d-flex w-50 pt-3 pb-3">
         <i class="bi bi-caret-right-fill"></i>
         <div>The team members didn't receive your invite?</div>
       </div>
-      <form class="w-75 rounded bg-white p-3 mt-3 shadow-sm">
+      <form class="w-50 rounded bg-white p-3 mt-3 shadow-sm">
         <h5 class="card-text fw-bold">Enter the team member you'd like to invite.</h5>
         <div class="card-text pt-3 pb-3">
           Don't worry! You'll be able to add more team members later.
@@ -44,9 +44,8 @@
         </div>
         <button type="submit" class="btn btn-warning">Invite</button>
       </form>
-      <!--<div class="help__button">
-        <%=require('html-loader!./components/HelpButton.html').default%>
-      </div>-->
+      <%= require("html-loader!./components/helpButton.html").default %>
+      <%= require("html-loader!./components/feedbackButton.html").default %>
     </div>
   </body>
 </html>

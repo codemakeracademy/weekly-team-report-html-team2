@@ -1,13 +1,29 @@
-.sidebar{
-    max-width: 250px;
-    background: #333a3d;
+.sidebar {
+  max-width: 250px;
+  background: #333a3d;
 }
 
-.help__button{
-    position: sticky;
-    bottom: 20px;
-    right: 20px;
-    width: 85px;
-    height: 40px;
-    z-index: 10;
+.help__button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 95px;
+  height: 40px;
+  z-index: 10;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+}
+
+.feedback__button {
+  position: fixed;
+  transform: rotate(-90deg);
+  border-radius: 4px 4px 0 0;
+  right: -20px;
+  bottom: 50%;
+  background: $feedback-button-bg;
+  padding: 5px 10px;
+  color: $white;
+  font-size: 12px;
+  border: 0;
+  cursor: pointer;
 }
