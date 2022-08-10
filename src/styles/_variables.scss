@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_mixins.scss";
+
+$btn-font-weight: bold;
+$btn-border-radius: 4px;
+$send-report-button-color: #8E999E;
+$send-report-button-bg: #E8ECED;
+
+$report-header-font-family: "Times New Roman";
+$report-header-font-weight: bold;
+
+$card-border-color: none;
+$card-border-radius: 0;
+$card-bg: #f5f7f8;
+
+$body-bg: #f5f7f8;
+$feedback-button-bg: #0B3D67;
+$yellow: #f0c815;
+
+
+$nav-pills-link-active-bg: #1f2426;
+$nav-link-color:white;
+$nav-link-hover-color: $yellow;
+$nav-pills-link-active-font-weight: bold;
+$nav-pills-link-active-color: white;
+$nav-link-hover-color:white;
+$nav-pills-border-radius: 3px;
+
+$warning: $yellow;
+$h6-font-size: 15px;
+
+$bootstrap-icons-font-dir: '../../node_modules/bootstrap-icons/font/fonts';

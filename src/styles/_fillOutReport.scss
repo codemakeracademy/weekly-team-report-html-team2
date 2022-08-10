@@ -1,0 +1,16 @@
+.text-area__counter {
+  position: absolute;
+  bottom: 70px;
+  right: 40px;
+  color: $input-placeholder-color;
+}
+
+.send-report-button {
+  color: $send-report-button-color;
+  background: $send-report-button-bg;
+}
+
+.report-header {
+  font-family: $report-header-font-family;
+  font-weight: $report-header-font-weight;
+}

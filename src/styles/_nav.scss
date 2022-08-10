@@ -1,0 +1,20 @@
+.nav-pills{
+    .nav-link{
+        text-align: start;
+        &:hover{
+            color: $yellow;
+        }
+        a{
+            &:visited{
+                color: white;
+            }
+        }
+    }
+    
+    .nav-link.active{
+        font-weight: bold;
+        &:hover{
+            color: $yellow;
+        }
+    }
+}
